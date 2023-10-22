@@ -19,23 +19,9 @@ class _EditTransactionScreenState extends State<EditTransactionScreen> {
   TextEditingController explainController = TextEditingController();
   TextEditingController amountController = TextEditingController();
   TextEditingController Howconroller = TextEditingController();
-  TextEditingController date_timecontroller = TextEditingController();
+  //TextEditingController date_timecontroller = TextEditingController();
   late Box<Add_data> box;
-
-  Future<void> _selectDate(BuildContext context) async {
-    final DateTime? newDate = await showDatePicker(
-      context: context,
-      initialDate: selectedDate,
-      firstDate: DateTime(2000),
-      lastDate: DateTime(2101),
-    );
-
-    if (newDate != null && newDate != selectedDate) {
-      setState(() {
-        selectedDate = newDate;
-      });
-    }
-  }
+  late DateTime date;
 
   @override
   void initState() {
@@ -45,7 +31,8 @@ class _EditTransactionScreenState extends State<EditTransactionScreen> {
     explainController.text = widget.transaction.explain;
     amountController.text = widget.transaction.amount;
     Howconroller.text = widget.transaction.IN;
-    //date_timecontroller = widget.transaction.dataTime;
+    date = widget.transaction.dataTime;
+    selectedItemi = widget.transaction.IN;
 
     Hive.openBox<Add_data>('data').then((value) {
       box = value;
@@ -63,7 +50,7 @@ class _EditTransactionScreenState extends State<EditTransactionScreen> {
       widget.transaction.explain = updatedExplain;
       widget.transaction.amount = updatedAmount;
       widget.transaction.IN = selectedItemi!;
-      widget.transaction.dataTime = selectedDate;
+      widget.transaction.dataTime = date;
 
       box.put(widget.transaction.key, widget.transaction);
 
@@ -134,7 +121,8 @@ class _EditTransactionScreenState extends State<EditTransactionScreen> {
           How(),
           const SizedBox(height: 30),
 
-          updateDateButton(), // Use the updated method here
+          //updateDateButton(), // Use the updated method here
+          date_time(),
           const SizedBox(
             height: 30,
           ),
@@ -171,33 +159,33 @@ class _EditTransactionScreenState extends State<EditTransactionScreen> {
       ),
     );
   }
-
-  GestureDetector updateDateButton() {
-    return GestureDetector(
-      onTap: () {
-        _selectDate(context);
-      },
-      child: Container(
-        alignment: Alignment.bottomLeft,
-        decoration: BoxDecoration(
+  Widget date_time() {
+    return Container(
+      alignment: Alignment.bottomLeft,
+      decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
-          border: Border.all(width: 2, color: const Color(0xffc5c5c5)),
-        ),
-        width: 300,
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Row(
-            children: [
-              const SizedBox(width: 10),
-              Text(
-                '${selectedDate.toLocal()}'
-                    .split(' ')[0], // Display the selected date
-                style: const TextStyle(fontSize: 15, color: Colors.black),
-              ),
-            ],
-          ),
-        ),
-      ),
+          border: Border.all(width: 2, color: const Color(0xffc5c5c5))),
+      width: 300,
+      child: TextButton(
+          onPressed: () async {
+            DateTime? newDate = await showDatePicker(
+                context: context,
+                initialDate: date,
+                firstDate: DateTime(2022),
+                lastDate: DateTime(2100));
+
+            if (newDate == null) return;
+            setState(() {
+              date = newDate;
+            });
+          },
+          child: Text(
+            'Date : ${date.year}/${date.day}/${date.month}',
+            style: const TextStyle(
+              fontSize: 15,
+              color: Colors.black,
+            ),
+          )),
     );
   }
 

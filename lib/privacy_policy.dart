@@ -23,105 +23,102 @@ class PrivacyPolicy extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Privacy Policy for CashFlow App',
+              'Privacy Policy',
               style: TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10.0),
             Text(
-              'This Privacy Policy describes how CashFlow, a money management mobile application ("App"), collects, uses, and protects user information.',
+              'Sreejith s built the Cash Flow app as a Free app. This SERVICE is provided by Sreejith s at no cost and is intended for use as is.\n This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service.If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy.\nThe terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which are accessible at Cash Flow unless otherwise defined in this Privacy Policy.',
               style: TextStyle(fontSize: 16.0),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Information Collection and Usage',
+              'Information Collection and Use',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 5.0),
             Text(
-              'CashFlow does not collect any personal information from users. We do not require or request users to create an account with personal information such as email addresses, phone numbers, or any identifiable data.',
+              'For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way.',
               style: TextStyle(fontSize: 16.0),
             ),
             SizedBox(height: 10.0),
             Text(
-              'User-Generated Data',
+              'Log Data',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 5.0),
             Text(
-              'The App allows users to input and manage their financial data, including but not limited to expenses, income, transactions, and other financial records. This data is stored locally on the user\'s device and is not transmitted to or stored on any external server.',
+              'I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics.',
               style: TextStyle(fontSize: 16.0),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Information Security',
+              'Cookies',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 5.0),
             Text(
-              'CashFlow takes reasonable measures to secure user-generated data stored on the users device. However, its essential for users to understand that no method of transmission over the internet or electronic storage is entirely secure, and we cannot guarantee absolute security.',
+              'Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your devices internal memory.This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service.',
               style: TextStyle(fontSize: 16.0),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Sharing of Information',
+              'Service Providers',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 5.0),
             Text(
-              'CashFlow does not share, sell, or distribute any user-generated data or personal information to third parties.',
+              'I may employ third-party companies and individuals due to the following reasons: \n . To facilitate our Service; \n . To provide the Service on our behalf; \n . To perform Service-related services; or \n . To assist us in analyzing how our Service is used. \n I want to inform users of this Service that these third parties have access to their Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.',
               style: TextStyle(fontSize: 16.0),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Third-Party Services',
+              'Security',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 5.0),
             Text(
-              'CashFlow may link to or integrate with third-party services, websites, or applications. Users are encouraged to review the privacy policies of those third-party services, as CashFlow is not responsible for the privacy practices or content of these third-party providers.',
+              'I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot guarantee its absolute security.',
               style: TextStyle(fontSize: 16.0),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Childrens Privacy',
+              'Links to Other Sites',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 5.0),
             Text(
-              'CashFlow is not intended for use by children under the age of 13. We do not knowingly collect personal information from children. If you are a parent or guardian and believe that your child has provided us with information, please contact us, and we will delete it.',
+              'This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.',
               style: TextStyle(fontSize: 16.0),
             ),
             SizedBox(height: 10.0),
             Text(
-              'Changes to this Privacy Policy',
+              'Children’s Privacy',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 5.0),
             Text(
-              'CashFlow reserves the right to update this Privacy Policy periodically. Users are encouraged to review this policy regularly for any changes. Continued use of the App after any modifications to the Privacy Policy constitutes acceptance of those changes.',
+              'I do not knowingly collect personally identifiable information from children. I encourage all children to never submit any personally identifiable information through the Application and/or Services. I encourage parents and legal guardians to monitor their childrens Internet usage and to help enforce this Policy by instructing their children never to provide personally identifiable information through the Application and/or Services without their permission. If you have reason to believe that a child has provided personally identifiable information to us through the Application and/or Services, please contact us. You must also be at least 16 years of age to consent to the processing of your personally identifiable information in your country (in some countries we may allow your parent or guardian to do so on your behalf).',
               style: TextStyle(fontSize: 16.0),
             ),
+            SizedBox(height: 20.0),
+            Text(
+              'Changes to This Privacy Policy',
+              style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+            ),
+            Text(
+              'I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. \n This policy is effective as of 2023-10-17',
+              style: TextStyle(fontSize: 16.0),
+            ),
+           
             SizedBox(height: 20.0),
             Text(
               'Contact Us',
               style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
             ),
-            Text(
-              'If you have any questions or concerns about this Privacy Policy or the App, please contact us at:',
-              style: TextStyle(fontSize: 16.0),
-            ),
-            Text(
-              '- Email: [your contact email]',
-              style: TextStyle(fontSize: 16.0),
-            ),
             SizedBox(height: 20.0),
             Text(
-              'Effective Date: [Current date]',
-              style: TextStyle(fontSize: 16.0, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(height: 20.0),
-            Text(
-              'Thank you for using CashFlow!',
+              'If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at sreejithsree7279@gmail.com. \n This privacy policy page was created at privacypolicytemplate.net and modified/generated by App Privacy Policy Generator',
               style: TextStyle(fontSize: 16.0),
             ),
           ],
